@@ -24,12 +24,12 @@ function App() {
     }
     setLoading(false);
   }
-
+  
   useEffect(()=>{
    fetchData(); 
-  },[]);
+  },[]);//for rendering first time
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-bgDark2">
       <div>
         <Navbar/>
       </div>
